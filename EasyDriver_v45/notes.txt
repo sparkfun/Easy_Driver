@@ -1,0 +1,17 @@
+EasyDriver Notes.txt
+
+A file to keep thoughts about each version, test results, changes, etc.
+
+10/27/2013 
+	For v50, add current limiting resistors to all inputs
+	For v50, add pull downs to STEP and DIR (ALL inputs have pull down or pull ups)
+	For v50, add P-FET reverse polarity protection
+	For v50, make 3.3/5 switch a cuttable jumper + .1" header for easy re-setting (change SJ1 and SJ2)
+	
+02/25/2014
+	SparkFun requested:
+	For v5.0 switch to normal SparkFun 0603 footprints for all Rs and Cs (done)
+	For v5.0 add date code to version number (done)
+	For v5.0 add OSHW logo to board (done) 
+	For v5.0 update silk screen for 10K trimpot so it's right 
+	For v5.0 Update 10K trimpot footprint based on part SparkFun is actually using - TC73 - for part 22AR10KLFTR
