@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -13262,11 +13262,11 @@ can use.</text>
 <text x="5.08" y="58.42" size="1.778" layer="98">6.3V to 30V (Vcc = 3.3V)</text>
 <text x="73.66" y="12.7" size="1.778" layer="98">SJ2 Normally Open -&gt; Vcc=5.0V</text>
 <text x="73.66" y="10.16" size="1.778" layer="98">SJ2 Closed -&gt; Vcc = 3.3V</text>
-<text x="116.84" y="170.18" size="1.778" layer="98">TP1 - VREF input to driver</text>
-<text x="116.84" y="167.64" size="1.778" layer="98">Monitor this test point with meter</text>
-<text x="116.84" y="165.1" size="1.778" layer="98">as you adjust current adj pot</text>
-<text x="116.84" y="162.56" size="1.778" layer="98">Valid range 1.0V to Vcc</text>
-<text x="116.84" y="160.02" size="1.778" layer="98">At VREF of 5V max current will be 833mA</text>
+<text x="116.84" y="177.8" size="1.778" layer="98">TP1 = Vref input to driver</text>
+<text x="116.84" y="175.26" size="1.778" layer="98">Monitor this test point with meter</text>
+<text x="116.84" y="172.72" size="1.778" layer="98">as you adjust current adj pot</text>
+<text x="116.84" y="170.18" size="1.778" layer="98">Valid range 1.0V to Vcc</text>
+<text x="116.84" y="167.64" size="1.778" layer="98">At Vref of 5V max current will be 833mA</text>
 <text x="2.54" y="144.78" size="1.778" layer="98">to GND or Vcc to override</text>
 <text x="2.54" y="139.7" size="1.778" layer="98">SLEEP = Vcc (awake)</text>
 <text x="2.54" y="137.16" size="1.778" layer="98">MS1 = Vcc (1/8 microstep)</text>
@@ -13276,7 +13276,7 @@ can use.</text>
 <text x="2.54" y="127" size="1.778" layer="98">PFD = Vcc (slow decay mode)</text>
 <text x="2.54" y="147.32" size="1.778" layer="98">Short JP5, JP6, JP7 pins </text>
 <text x="2.54" y="149.86" size="1.778" layer="98">DEFAULT OPTIONS</text>
-<text x="116.84" y="157.48" size="1.778" layer="98">At VREF of 3.3V max current will be 550mA</text>
+<text x="116.84" y="165.1" size="1.778" layer="98">At Vref of 2V max current will be 333mA</text>
 <text x="2.54" y="177.8" size="5.08" layer="98">EasyDriver v4.5</text>
 <text x="12.7" y="106.68" size="1.778" layer="98">DIR is level sensitive</text>
 <text x="12.7" y="104.14" size="1.778" layer="98">A rising edge on STEP</text>
@@ -13294,7 +13294,7 @@ can use.</text>
 <text x="2.54" y="160.02" size="1.778" layer="98">Do not connect or disconnect motor</text>
 <text x="2.54" y="157.48" size="1.778" layer="98">whlie EasyDriver is powered</text>
 <text x="113.538" y="139.192" size="1.778" layer="98">Current adj pot</text>
-<text x="116.84" y="154.94" size="1.778" layer="98">At VREF of 1V max current will be 166mA</text>
+<text x="116.84" y="162.56" size="1.778" layer="98">At Vref of 1V max current will be 166mA</text>
 <text x="182.88" y="180.34" size="2.54" layer="98">www.schmalzhaus.com/EasyDriver</text>
 <text x="2.54" y="6.35" size="0.8128" layer="98">EasyDriver by Brian Schmalz is</text>
 <text x="2.54" y="5.08" size="0.8128" layer="98">licensed under a Creative Commons</text>
@@ -13305,8 +13305,8 @@ can use.</text>
 <text x="205.74" y="169.164" size="1.778" layer="98">R17 to create any voltage</text>
 <text x="205.74" y="164.084" size="1.778" layer="98">speed performance.</text>
 <text x="205.74" y="166.624" size="1.778" layer="98">on PFD for best high</text>
-<text x="116.84" y="152.4" size="1.778" layer="98">Minimum current gives smoothest microsteps</text>
-<text x="116.84" y="149.86" size="1.778" layer="98">Maximum current gives highest torque</text>
+<text x="116.84" y="160.02" size="1.778" layer="98">Minimum current gives smoothest microsteps</text>
+<text x="116.84" y="157.48" size="1.778" layer="98">Maximum current gives highest torque</text>
 <text x="205.74" y="161.544" size="1.778" layer="98">See datasheet</text>
 <text x="27.94" y="30.48" size="1.778" layer="98">Both C3 and C1 must</text>
 <text x="27.94" y="27.94" size="1.778" layer="98">Be rated for &gt;=35V</text>
@@ -13325,6 +13325,7 @@ Updated to latest SparkFun footprints
 Swithed from CC BY 3.0 to CC BY-SA 3.0 license
 Fixed pot silkscreen direction</text>
 <text x="236.22" y="7.62" size="1.778" layer="94">4.5</text>
+<text x="116.84" y="154.94" size="1.778" layer="98">Max Coil Current(in Amps) = Vref(in Volts)/6</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="177.8" y="114.3"/>

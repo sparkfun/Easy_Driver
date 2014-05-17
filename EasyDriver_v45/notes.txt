@@ -15,3 +15,22 @@ A file to keep thoughts about each version, test results, changes, etc.
 	For v4.5 add OSHW logo to board (done) 
 	For v4.5 update silk screen for 10K trimpot so it's right  (done)
 	For v4.5 Update 10K trimpot footprint based on part SparkFun is actually using - TRIMPOT-3MM-2 - for part 22AR10KLFTR (done)
+
+05/16/2014 v4.5 Prototype Testing
+* Minimum voltage necessary to trigger STEP and DIRECTION inputs (M+ at 12V):
+	* Existing v4.5 design (R18 and R18 before the pulldowns)
+		* At 5V Vcc, 2.9V is needed to trigger STEP and DIR
+		* At 3.3V Vcc, 2.0V is needed to trigger STEP and DIR
+	* With R18 and R19 after the pulldowns (rather than before), 
+		* At 5V Vcc, 2.7V needed for STEP and DIR
+		* Ad 3.3V Vcc, 1.8V needed for STEP and DIR
+* Vcc measurements (M+ at 12V):
+	* With 3/5V jumper open (default) : 5.027V
+	* With 3/5V jumper closed : 3.300V
+* TP1 needs to not have solder mask over it, and needs to be bigger in order to be easy to hit with a volt meter probe.
+* Recommend SparkFun set pot so that TP1 = 2V. This will set the coil current at about 333mA
+* Recommend changing R5 to 2.4K. This gives complete lower range to VRef and thus allows lower current limits for smaller stepper motors. Tested this out by replacing R5 (5.1K) with 2.4K resistor, and low end current now works much better. Minimum coil current (with Current Adjustment Pot set CW and R5=2.4K) = 145mA/phase.
+* Maximum coil current measured (with Current Adjustment Pot set CCW) = 840mA/phase
+* Confirmed proper operation of MS1/MS2/ENABLE/SLEEP/RESET inputs
+* Tested four different NEMA-12 motors, all had good performance given various M+ input voltages, step speeds, and current pot adjustment values.
+* Tested M+ input voltage from 5V to 30V. Properly adjusting step speed and current limit pot gave good performance over entire range.
