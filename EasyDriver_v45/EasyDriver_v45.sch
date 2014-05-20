@@ -12703,7 +12703,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="MOT_PWR" library="supply1" deviceset="V+" device=""/>
 <part name="P+13" library="supply1" deviceset="+5V" device="" value="VCC"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="5.1K"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="2.4K"/>
 <part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="390"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="240"/>
@@ -12733,7 +12733,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="SparkFun" deviceset="LOGO-SFE" device="NEW"/>
-<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="???"/>
+<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="6.8K"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="JP8" library="SparkFun-7-28-09" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun-7-28-09" deviceset="STAND-OFF" device=""/>
@@ -12751,14 +12751,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R21" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="227.33" y1="130.302" x2="237.998" y2="130.302" width="0.1524" layer="98"/>
-<wire x1="237.998" y1="130.302" x2="237.998" y2="141.986" width="0.1524" layer="98"/>
-<wire x1="237.998" y1="141.986" x2="227.33" y2="141.986" width="0.1524" layer="98"/>
-<wire x1="227.33" y1="141.986" x2="227.33" y2="130.302" width="0.1524" layer="98"/>
 <text x="154.94" y="30.48" size="1.778" layer="94">Designed by Brian Schmalz</text>
 <text x="154.94" y="25.4" size="1.778" layer="94">Produced by Spark Fun Electronics</text>
 <text x="134.62" y="55.88" size="1.778" layer="98">Vcc output
@@ -12813,15 +12811,10 @@ can use.</text>
 <text x="2.54" y="6.35" size="0.8128" layer="98">EasyDriver by Brian Schmalz is</text>
 <text x="2.54" y="5.08" size="0.8128" layer="98">licensed under a Creative Commons</text>
 <text x="2.54" y="3.81" size="0.8128" layer="98">Attribution Share Alike (CC BY-SA) 3.0 US License</text>
-<text x="228.854" y="139.192" size="1.778" layer="98">NOPOP</text>
-<text x="205.74" y="174.244" size="1.778" layer="98">PFD intermediate voltage</text>
-<text x="205.74" y="171.704" size="1.778" layer="98">Change R12 and add in </text>
-<text x="205.74" y="169.164" size="1.778" layer="98">R17 to create any voltage</text>
-<text x="205.74" y="164.084" size="1.778" layer="98">speed performance.</text>
-<text x="205.74" y="166.624" size="1.778" layer="98">on PFD for best high</text>
+<text x="205.74" y="161.544" size="1.778" layer="98">PFD intermediate voltage</text>
+<text x="205.74" y="159.004" size="1.778" layer="98">Set for 'mixed-decay' mode.</text>
 <text x="116.84" y="160.02" size="1.778" layer="98">Minimum current gives smoothest microsteps</text>
 <text x="116.84" y="157.48" size="1.778" layer="98">Maximum current gives highest torque</text>
-<text x="205.74" y="161.544" size="1.778" layer="98">See datasheet</text>
 <text x="27.94" y="30.48" size="1.778" layer="98">Both C3 and C1 must</text>
 <text x="27.94" y="27.94" size="1.778" layer="98">Be rated for &gt;=35V</text>
 <text x="167.64" y="58.42" size="0.8128" layer="98">Change List:</text>
@@ -12832,14 +12825,17 @@ can use.</text>
 <text x="167.64" y="52.07" size="0.8128" layer="98">v4.4 1/3/12 BPS : C3 now 47uF</text>
 <text x="2.54" y="2.54" size="0.8128" layer="98">Copyright 2010-2014</text>
 <text x="167.64" y="50.8" size="0.8128" layer="98">v4.5 2/25/14 BPS</text>
-<text x="170.18" y="43.18" size="0.8128" layer="98">Added series resistors and pull downs on STEP/DIR
+<text x="170.18" y="40.64" size="0.8128" layer="98">Added series resistors and pull downs on STEP/DIR
 Updated pot fooprint
 Made bottom layer GND rather than VCC
 Updated to latest SparkFun footprints
 Swithed from CC BY 3.0 to CC BY-SA 3.0 license
-Fixed pot silkscreen direction</text>
+Fixed pot silkscreen direction
+R5 now 2.5K Ohms to get down to 1V on Vref
+R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <text x="236.22" y="7.62" size="1.778" layer="94">4.5</text>
 <text x="116.84" y="154.94" size="1.778" layer="98">Max Coil Current(in Amps) = Vref(in Volts)/6</text>
+<text x="116.84" y="152.4" size="1.778" layer="98">Set R16 to 2.0V at factory = 333mA/phase</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="177.8" y="114.3"/>
@@ -12848,7 +12844,7 @@ Fixed pot silkscreen direction</text>
 <instance part="P+3" gate="1" x="220.98" y="83.82" smashed="yes" rot="R270">
 <attribute name="VALUE" x="221.742" y="83.058" size="1.778" layer="96"/>
 </instance>
-<instance part="GND6" gate="1" x="114.3" y="66.04"/>
+<instance part="GND6" gate="1" x="114.3" y="76.2"/>
 <instance part="P+5" gate="1" x="114.3" y="106.68" smashed="yes">
 <attribute name="VALUE" x="112.014" y="107.188" size="1.778" layer="96"/>
 </instance>
@@ -12956,27 +12952,29 @@ Fixed pot silkscreen direction</text>
 <instance part="JP1" gate="G$1" x="20.32" y="48.26"/>
 <instance part="JP4" gate="G$1" x="142.24" y="50.8" rot="R180"/>
 <instance part="LOGO1" gate="G$1" x="132.08" y="10.16"/>
-<instance part="R18" gate="G$1" x="68.58" y="106.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="107.9246" size="1.778" layer="95"/>
-<attribute name="VALUE" x="70.104" y="107.95" size="1.778" layer="96"/>
+<instance part="R18" gate="G$1" x="86.36" y="106.68" smashed="yes" rot="R180">
+<attribute name="NAME" x="81.28" y="107.9246" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.884" y="107.95" size="1.778" layer="96"/>
 </instance>
-<instance part="R19" gate="G$1" x="68.58" y="101.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="102.8446" size="1.778" layer="95"/>
-<attribute name="VALUE" x="70.104" y="102.87" size="1.778" layer="96"/>
+<instance part="R19" gate="G$1" x="86.36" y="101.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="81.28" y="102.8446" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.884" y="102.87" size="1.778" layer="96"/>
 </instance>
 <instance part="GND7" gate="1" x="63.5" y="93.98"/>
-<instance part="R20" gate="G$1" x="121.92" y="76.2" smashed="yes">
-<attribute name="NAME" x="117.094" y="77.4446" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.444" y="77.47" size="1.778" layer="96"/>
+<instance part="R20" gate="G$1" x="73.66" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.4154" y="89.154" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="95.504" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R21" gate="G$1" x="121.92" y="71.12" smashed="yes">
-<attribute name="NAME" x="117.094" y="72.3646" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.444" y="72.39" size="1.778" layer="96"/>
+<instance part="R21" gate="G$1" x="78.74" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="77.4954" y="89.154" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="77.47" y="95.504" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="TP1" gate="G$1" x="142.24" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="139.7" y="144.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.78" y="142.24" size="1.778" layer="96"/>
 </instance>
+<instance part="GND8" gate="1" x="73.66" y="83.82"/>
+<instance part="GND16" gate="1" x="78.74" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -13033,17 +13031,9 @@ Fixed pot silkscreen direction</text>
 </segment>
 <segment>
 <wire x1="116.84" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="81.28" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="76.2" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="71.12" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
-<junction x="114.3" y="76.2"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
-<junction x="114.3" y="71.12"/>
+<wire x1="114.3" y1="81.28" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="99.06" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
@@ -13098,6 +13088,16 @@ Fixed pot silkscreen direction</text>
 <wire x1="236.22" y1="134.62" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="73.66" y1="88.9" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="78.74" y1="88.9" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -13217,7 +13217,7 @@ Fixed pot silkscreen direction</text>
 <pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="VREF" class="0">
 <segment>
 <wire x1="129.54" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
@@ -13278,13 +13278,8 @@ Fixed pot silkscreen direction</text>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
-<label x="76.2" y="106.68" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="127" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<label x="129.54" y="76.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
+<label x="93.98" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MS1" class="0">
@@ -13403,13 +13398,8 @@ Fixed pot silkscreen direction</text>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
-<label x="76.2" y="101.6" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="127" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
-<label x="129.54" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
+<label x="93.98" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SLEEP" class="0">
@@ -13467,16 +13457,24 @@ Fixed pot silkscreen direction</text>
 <segment>
 <wire x1="58.42" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="104.14" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="106.68" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="99.06" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<junction x="73.66" y="106.68"/>
 </segment>
 </net>
 <net name="STEP_IN" class="0">
 <segment>
-<wire x1="58.42" y1="101.6" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="99.06" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
+<junction x="78.74" y="101.6"/>
 </segment>
 </net>
 </nets>
