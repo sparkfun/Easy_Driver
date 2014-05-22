@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5658,12 +5658,6 @@ grid 2.54 mm, diameter 6 mm</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="+5V">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="V+">
 <wire x1="0.889" y1="-1.27" x2="0" y2="0.127" width="0.254" layer="94"/>
 <wire x1="0" y1="0.127" x2="-0.889" y2="-1.27" width="0.254" layer="94"/>
@@ -5678,19 +5672,6 @@ grid 2.54 mm, diameter 6 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="+5V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="V+" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -6985,12 +6966,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 </packages>
 <symbols>
-<symbol name="LETTER_L">
-<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.4064" layer="94"/>
-<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="185.42" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="0" x2="248.92" y2="0" width="0.4064" layer="94"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -7002,35 +6977,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="0" size="1.9304" layer="94">SFE</text>
-</symbol>
-<symbol name="DOCFIELD">
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.254" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.254" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.254" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.254" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.254" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.254" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.254" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.254" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
-<text x="1.524" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
-<text x="15.494" y="17.78" size="2.7432" layer="94" font="vector">&gt;DRAWING_NAME</text>
 </symbol>
 <symbol name="M02">
 <wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
@@ -7080,21 +7026,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FRAME-LETTER" prefix="FRAME">
-<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
-Standard 8.5x11 US Letter frame</description>
-<gates>
-<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="">
@@ -8692,6 +8623,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.0938" y="0" curve="-247.497204"/>
 <vertex x="0.4186" y="-1.0105"/>
 </polygon>
+</package>
+<package name="CREATIVE_COMMONS">
+<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
 </package>
 </packages>
 <symbols>
@@ -12249,6 +12185,50 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
+<symbol name="LETTER_L">
+<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.4064" layer="94"/>
+<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="185.42" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="248.92" y2="0" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.254" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.254" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.254" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.254" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.254" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.254" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.254" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
+<text x="1.524" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
+<text x="15.494" y="17.78" size="2.7432" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="2.54" y="31.75" size="1.9304" layer="94">Released under the Creative Commons</text>
+<text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
+<text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
+</symbol>
+<symbol name="VCC">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OSHW-LOGO" prefix="LOGO">
@@ -12268,6 +12248,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="L" package="OSHW-LOGO-L">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAME-LETTER" prefix="FRAME">
+<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
+Standard 8.5x11 US Letter frame</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="CREATIVE_COMMONS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12688,23 +12696,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IC1" library="Allegro" deviceset="A3967SLB" device="" value="A3967SLB"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" deviceset="+5V" device="" value="VCC"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device="" value="VCC"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value=".75"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value=".75"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="20K"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="20K"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="1uf"/>
-<part name="P+4" library="supply1" deviceset="+5V" device="" value="VCC"/>
 <part name="C3" library="rcl" deviceset="CPOL-US" device="D" value="47uF"/>
 <part name="P+10" library="supply1" deviceset="V+" device=""/>
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
 <part name="MOT_PWR" library="supply1" deviceset="V+" device=""/>
-<part name="P+13" library="supply1" deviceset="+5V" device="" value="VCC"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="2.4K"/>
-<part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="390"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="240"/>
 <part name="PWR_LED" library="SparkFun-LED" deviceset="LED-YELLOW" device="0603" value="YELLOW"/>
@@ -12715,7 +12718,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10K"/>
-<part name="P+1" library="supply1" deviceset="+5V" device="" value="VCC"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="680pF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="680pF"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
@@ -12753,12 +12755,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="154.94" y="30.48" size="1.778" layer="94">Designed by Brian Schmalz</text>
-<text x="154.94" y="25.4" size="1.778" layer="94">Produced by Spark Fun Electronics</text>
+<text x="170.942" y="11.43" size="1.778" layer="94">Brian Schmalz</text>
+<text x="148.59" y="7.366" size="1.778" layer="94">Produced by Spark Fun Electronics</text>
 <text x="134.62" y="55.88" size="1.778" layer="98">Vcc output
 Max 70mA used 
 by EasyDriver.
@@ -12836,18 +12844,13 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <text x="236.22" y="7.62" size="1.778" layer="94">4.5</text>
 <text x="116.84" y="154.94" size="1.778" layer="98">Max Coil Current(in Amps) = Vref(in Volts)/6</text>
 <text x="116.84" y="152.4" size="1.778" layer="98">Set R16 to 2.0V at factory = 333mA/phase</text>
+<rectangle x1="147.32" y1="22.86" x2="248.92" y2="35.56" layer="94"/>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="177.8" y="114.3"/>
 <instance part="GND2" gate="1" x="147.32" y="93.98"/>
 <instance part="GND3" gate="1" x="228.6" y="93.98"/>
-<instance part="P+3" gate="1" x="220.98" y="83.82" smashed="yes" rot="R270">
-<attribute name="VALUE" x="221.742" y="83.058" size="1.778" layer="96"/>
-</instance>
 <instance part="GND6" gate="1" x="114.3" y="76.2"/>
-<instance part="P+5" gate="1" x="114.3" y="106.68" smashed="yes">
-<attribute name="VALUE" x="112.014" y="107.188" size="1.778" layer="96"/>
-</instance>
 <instance part="R1" gate="G$1" x="157.48" y="99.06" smashed="yes">
 <attribute name="NAME" x="153.67" y="100.5586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="158.75" y="100.584" size="1.778" layer="96"/>
@@ -12865,9 +12868,6 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <attribute name="VALUE" x="146.05" y="118.618" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C2" gate="G$1" x="114.3" y="45.72"/>
-<instance part="P+4" gate="1" x="114.3" y="55.88" smashed="yes">
-<attribute name="VALUE" x="114.808" y="56.642" size="1.778" layer="96"/>
-</instance>
 <instance part="C3" gate="G$1" x="38.1" y="45.72"/>
 <instance part="P+10" gate="1" x="157.48" y="114.3" smashed="yes" rot="R90">
 <attribute name="VALUE" x="153.924" y="113.538" size="1.778" layer="96"/>
@@ -12876,16 +12876,11 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <attribute name="VALUE" x="219.202" y="113.538" size="1.778" layer="96"/>
 </instance>
 <instance part="MOT_PWR" gate="1" x="45.72" y="63.5"/>
-<instance part="P+13" gate="1" x="226.06" y="157.48" smashed="yes">
-<attribute name="VALUE" x="227.838" y="155.448" size="1.778" layer="96"/>
-</instance>
 <instance part="GND1" gate="1" x="124.46" y="111.76"/>
 <instance part="R5" gate="G$1" x="124.46" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="119.888" y="122.6566" size="1.778" layer="95"/>
 <attribute name="VALUE" x="117.348" y="119.634" size="1.778" layer="96"/>
 </instance>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="R6" gate="G$1" x="66.04" y="30.48" rot="R90"/>
 <instance part="R8" gate="G$1" x="91.44" y="43.18" rot="R90"/>
 <instance part="PWR_LED" gate="G$1" x="124.46" y="33.02"/>
@@ -12910,9 +12905,6 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <instance part="R10" gate="G$1" x="121.92" y="91.44" smashed="yes" rot="R180">
 <attribute name="NAME" x="116.84" y="92.6846" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.444" y="92.71" size="1.778" layer="96"/>
-</instance>
-<instance part="P+1" gate="1" x="124.46" y="147.32" smashed="yes">
-<attribute name="VALUE" x="126.746" y="145.542" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="137.16" y="121.92" smashed="yes">
 <attribute name="NAME" x="133.35" y="124.841" size="1.778" layer="95"/>
@@ -12975,6 +12967,17 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 </instance>
 <instance part="GND8" gate="1" x="73.66" y="83.82"/>
 <instance part="GND16" gate="1" x="78.74" y="83.82"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="FRAME2" gate="G$2" x="147.32" y="0"/>
+<instance part="SUPPLY1" gate="G$1" x="114.3" y="53.34"/>
+<instance part="SUPPLY2" gate="G$1" x="124.46" y="144.78"/>
+<instance part="SUPPLY3" gate="G$1" x="226.06" y="154.94" smashed="yes">
+<attribute name="VALUE" x="227.838" y="155.448" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="218.44" y="83.82" smashed="yes" rot="R270">
+<attribute name="VALUE" x="221.996" y="82.804" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="114.3" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -13103,18 +13106,16 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <net name="VCC" class="0">
 <segment>
 <wire x1="226.06" y1="152.4" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="P+13" gate="1" pin="+5V"/>
 <pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="83.82" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="LOGIC_SUPPLY"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="101.6" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
@@ -13128,25 +13129,28 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="86.36" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
 <junction x="114.3" y="91.44"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<wire x1="114.3" y1="101.6" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="139.7" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="R16" gate="R?" pin="CCW"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="124.46" y1="139.7" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="53.34" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="50.8" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <junction x="114.3" y="50.8"/>
 <junction x="124.46" y="50.8"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="SJ1" gate="1" pin="2"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<wire x1="114.3" y1="53.34" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+<junction x="114.3" y="50.8"/>
 </segment>
 </net>
 <net name="N$1" class="0">
