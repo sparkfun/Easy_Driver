@@ -1,2 +1,23 @@
-Easy_Driver
+Easy Driver
 ===========
+
+![Easy Driver](URL for picture of part)
+
+[*Easy Driver (SKU)*](URL for product on Sparkfun.com)
+
+
+The EasyDriver is a simple to use stepper motor driver, compatible with anything that can output a digital 0 to 5V pulse (or 0 to 3.3V pulse if you solder SJ2 closed on the EasyDriver). 
+The EasyDriver requires a 7V to 20V supply to power the motor and can power any voltage of stepper motor.
+
+
+Repository Contents
+-------------------
+* **/Firmware** - Any firmware that the part ships with, 
+* **/Hardware** - All Eagle design files (.brd, .sch, .STL)
+* **/Production** - Test bed files and production panel files
+
+
+License Information
+-------------------
+
+_Note: This product is a collaboration with Brian Schmalz. A portion of each sales goes back to him for product support and continued development._
