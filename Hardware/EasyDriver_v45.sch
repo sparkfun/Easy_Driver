@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12821,14 +12821,18 @@ The rest you
 can use.</text>
 <text x="48.26" y="58.42" size="1.778" layer="98">Must use LM317</text>
 <text x="48.26" y="55.88" size="1.778" layer="98">For 30V V+ input</text>
-<text x="81.28" y="60.96" size="1.778" layer="98">SJ1 Normally Shorted</text>
-<text x="81.28" y="58.42" size="1.778" layer="98">Cut to use your own</text>
-<text x="81.28" y="55.88" size="1.778" layer="98">Vcc source from JP4</text>
+<text x="77.216" y="57.15" size="1.778" layer="98">SJ1 (APWR) Shorted with copper
+trace from factory. Cut trace to
+disconnect IC2 power supply
+from Vcc and then supply your 
+own Vcc (3.3V or 5V) to the "5V"
+pin.</text>
 <text x="5.08" y="63.5" size="1.778" layer="98">Power Input</text>
 <text x="5.08" y="60.96" size="1.778" layer="98">8V to 30V (Vcc = 5V)</text>
 <text x="5.08" y="58.42" size="1.778" layer="98">6.3V to 30V (Vcc = 3.3V)</text>
-<text x="73.66" y="12.7" size="1.778" layer="98">SJ2 Normally Open -&gt; Vcc=5.0V</text>
-<text x="73.66" y="10.16" size="1.778" layer="98">SJ2 Closed -&gt; Vcc = 3.3V</text>
+<text x="77.47" y="21.59" size="1.778" layer="98">SJ2 (3/5V) 
+   Normally Open -&gt; Vcc=5.0V
+   Closed -&gt; Vcc = 3.3V</text>
 <text x="116.84" y="177.8" size="1.778" layer="98">TP1 = Vref input to driver</text>
 <text x="116.84" y="175.26" size="1.778" layer="98">Monitor this test point with meter</text>
 <text x="116.84" y="172.72" size="1.778" layer="98">as you adjust current adj pot</text>
@@ -12898,12 +12902,12 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <instance part="GND3" gate="1" x="228.6" y="93.98"/>
 <instance part="GND6" gate="1" x="114.3" y="76.2"/>
 <instance part="R1" gate="G$1" x="157.48" y="99.06" smashed="yes">
-<attribute name="NAME" x="153.67" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="158.75" y="100.584" size="1.778" layer="96"/>
+<attribute name="NAME" x="153.67" y="100.8126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="159.004" y="100.838" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="218.44" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="214.884" y="100.3046" size="1.778" layer="95"/>
-<attribute name="VALUE" x="219.964" y="100.33" size="1.778" layer="96"/>
+<attribute name="NAME" x="214.884" y="100.8126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="219.71" y="100.838" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="228.6" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="230.378" y="123.4186" size="1.778" layer="95"/>
@@ -12924,18 +12928,33 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 <instance part="MOT_PWR" gate="1" x="45.72" y="63.5"/>
 <instance part="GND1" gate="1" x="124.46" y="111.76"/>
 <instance part="R5" gate="G$1" x="124.46" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="119.888" y="122.6566" size="1.778" layer="95"/>
-<attribute name="VALUE" x="117.348" y="119.634" size="1.778" layer="96"/>
+<attribute name="NAME" x="119.634" y="122.4026" size="1.778" layer="95"/>
+<attribute name="VALUE" x="115.824" y="119.126" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="66.04" y="30.48" rot="R90"/>
-<instance part="R8" gate="G$1" x="91.44" y="43.18" rot="R90"/>
-<instance part="PWR_LED" gate="G$1" x="124.46" y="33.02"/>
-<instance part="R9" gate="G$1" x="124.46" y="43.18" rot="R90"/>
+<instance part="R6" gate="G$1" x="66.04" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.818" y="31.2166" size="1.778" layer="95"/>
+<attribute name="VALUE" x="67.818" y="28.702" size="1.778" layer="96"/>
+</instance>
+<instance part="R8" gate="G$1" x="91.44" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.964" y="43.4086" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.964" y="41.148" size="1.778" layer="96"/>
+</instance>
+<instance part="PWR_LED" gate="G$1" x="124.46" y="33.02" smashed="yes">
+<attribute name="NAME" x="126.492" y="29.718" size="1.778" layer="95"/>
+<attribute name="VALUE" x="126.492" y="32.131" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="124.46" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="126.238" y="44.4246" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.984" y="41.656" size="1.778" layer="96"/>
+</instance>
 <instance part="R11" gate="G$1" x="121.92" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="116.84" y="102.8446" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.444" y="102.87" size="1.778" layer="96"/>
 </instance>
-<instance part="R12" gate="G$1" x="226.06" y="147.32" rot="R90"/>
+<instance part="R12" gate="G$1" x="226.06" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="227.838" y="148.3106" size="1.778" layer="95"/>
+<attribute name="VALUE" x="227.838" y="145.796" size="1.778" layer="96"/>
+</instance>
 <instance part="R13" gate="G$1" x="121.92" y="81.28" smashed="yes">
 <attribute name="NAME" x="117.094" y="82.5246" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.444" y="82.55" size="1.778" layer="96"/>
@@ -12964,7 +12983,10 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 </instance>
 <instance part="SJ1" gate="1" x="99.06" y="50.8"/>
 <instance part="SJ2" gate="1" x="73.66" y="22.86"/>
-<instance part="R7" gate="G$1" x="66.04" y="15.24" rot="R90"/>
+<instance part="R7" gate="G$1" x="66.04" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="61.214" y="15.7226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.436" y="12.954" size="1.778" layer="96"/>
+</instance>
 <instance part="R16" gate="R?" x="124.46" y="134.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="117.602" y="135.6106" size="1.778" layer="95"/>
 <attribute name="VALUE" x="117.348" y="132.588" size="1.778" layer="96"/>
@@ -13000,16 +13022,16 @@ R17 now 6.8K to set PDF to 'mixed-decay' mode</text>
 </instance>
 <instance part="GND7" gate="1" x="63.5" y="93.98"/>
 <instance part="R20" gate="G$1" x="73.66" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.4154" y="89.154" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="72.39" y="95.504" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="67.564" y="94.7166" size="1.778" layer="95"/>
+<attribute name="VALUE" x="67.564" y="91.694" size="1.778" layer="96"/>
 </instance>
 <instance part="R21" gate="G$1" x="78.74" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="77.4954" y="89.154" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="77.47" y="95.504" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="80.518" y="94.4626" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.264" y="91.948" size="1.778" layer="96"/>
 </instance>
 <instance part="TP1" gate="G$1" x="142.24" y="139.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="139.7" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="144.78" y="142.24" size="1.778" layer="96"/>
+<attribute name="NAME" x="140.208" y="143.764" size="1.778" layer="95"/>
+<attribute name="VALUE" x="134.62" y="146.05" size="1.778" layer="96"/>
 </instance>
 <instance part="GND8" gate="1" x="73.66" y="83.82"/>
 <instance part="GND16" gate="1" x="78.74" y="83.82"/>
