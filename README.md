@@ -16,6 +16,12 @@ Repository Contents
 * **/Hardware** - All Eagle design files (.brd, .sch, .STL)
 * **/Production** - Test bed files and production panel files
 
+Documentation
+--------------
+
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/easy-driver-hook-up-guide)** - Basic hookup guide for the Easy Driver.
+* **[Brian Schmalz: Easy Driver](http://schmalzhaus.com/EasyDriver/)** - More specs and FAQ.
+
 
 License Information
 -------------------
