@@ -134,6 +134,8 @@ void SmallStepMode()
     digitalWrite(stp,LOW); //Pull step pin low so it can be triggered again
     delay(1);
   }
+  digitalWrite(MS1, LOW); // Reset to full step resolution
+  digitalWrite(MS2, LOW);
   Serial.println("Enter new option");
   Serial.println();
 }
